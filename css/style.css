@@ -24,11 +24,11 @@ header {
 /* --------logo--------- */
 #logo {
     flex-grow: 1;
-}
-
-#logo img {
-    width: 200px;
     margin-left: 20px;
+
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e0ebf7;
 }
 
 
@@ -86,7 +86,7 @@ main p {
 .welcome {
     height: calc(100vh - 70px);
 
-    background-image: url(/img/background.webp);
+    background-image: url(/assets/smr1.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
