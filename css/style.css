@@ -1,19 +1,213 @@
 
-/**************BASIC SETTINGS***************/
+/* ---------------BASICS----------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/***************HEADER**********************/
 
 
-/***************NAV**********************/
 
 
-/****************MAIN**********************/
+/* ---------------HEADER---------------- */
+header {
+    display: flex;
+    align-items: center;
+
+    background-color: #15304c;
+    height: 70px;
+}
 
 
-/****************FOOTER********************/
 
+/* --------logo--------- */
+#logo {
+    flex-grow: 1;
+}
+
+#logo img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+
+/* --------navigation--------- */
+header nav {
+    margin-right: 30px;
+}
+
+header nav li {
+    list-style: none;
+
+    display: inline-block;
+
+    margin-right: 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav li a:hover {
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+
+
+/* --------menu-icon--------- */
+.menu-icon {
+    display: none;
+
+    margin-right: 30px;
+}
+
+
+
+
+
+/* ---------------MAIN---------------- */
+main h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+
+
+/* --------welcome--------- */
+.welcome {
+    height: calc(100vh - 70px);
+
+    background-image: url(/img/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* --------rockfort--------- */
+#rockfort {
+    color: #15304c;
+    background-color: #e0ebf7;
+
+    width: 70vw;
+    margin: 7% auto;
+    border-radius: 20px;
+    padding: 2%;
+
+    text-align: center;
+}
+
+
+
+/* --------harry-potter--------- */
+#harry-potter {
+    color: white;
+    background-color: #15304c;
+  
+    padding: 7% 4%;
+    text-align: center;
+}
+
+.harry-potter-container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+
+
+/* --------harry-photo--------- */
+.harry-photo {
+    width: 70vw;
+    margin: 7% auto 0 auto;
+}
+
+.harry-photo img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* --------funfacts--------- */
+#funfacts {
+    width: 70vw;
+    margin: 7% auto;
+
+    text-align: center;
+}
+
+#funfacts li {
+    color: #15304c;
+    list-style: none;
+    background-color: #e0ebf7;
+
+    border-radius: 20px;
+
+    padding: 2%;
+    margin: 3% 0;
+}
+
+.funfacts li:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+
+
+
+
+/* ---------------FOOTER---------------- */
+#footer {
+    background-color: #15304c;
+    padding: 20px 0;
+}
+
+#footer div {
+    width: 70vw;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer h3 {
+    color: white;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#footer a:hover {
+    background-color: #245281;
+
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+#footer .contacts {
+    text-transform: uppercase;
+    font-weight: 700;
+}
