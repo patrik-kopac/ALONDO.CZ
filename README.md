@@ -1,0 +1,1 @@
+Webová prezentace projektového manažera a projektanta fotovoltaických elektráren Ing. Jiřího Londýna. Použité byli základní dovednosti z HTML, CSS a JavaScriptu. 
