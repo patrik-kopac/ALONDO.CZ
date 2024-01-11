@@ -10,50 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ba26cb1dc.js" crossorigin="anonymous"></script>
     <meta name=”description” content=”Průmyslové fotovoltaické elektrárny Alondo.cz: Projekt, realizace, připojení”>
     
 </head>
 <body>
     
     <!------------------HEADER------------------------>
-    <header>
+    <header class="header">
 
-        <!------------------logo---------------->
-        <div id="logo">
+        <section class="header-container">
 
-            <h1>
-                ALONDO.CZ
-            </h1>
+            <!------------------logo---------------->
+            <div id="logo">
+    
+                <a href="#welcome">
+                    <h1>
+                        ALONDO.CZ
+                    </h1>
+                </a>
+                <!-- <i class="fa-regular fa-circle-xmark"></i> -->
 
-        </div>
+            </div>
+    
+            <!------------------navigation-------------->
+            <nav>
+    
+                <ul>
+                    <li><a href="#welcome">Domů</a></li>
+                    <li><a href="#about-us">O nás</a></li>
+                    <li><a href="#our-work">Dokončené realizace</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contacts">Kontakt</a></li>
+                </ul>
+    
+            </nav>
+    
+            <!-----------------menu-icon---------->
+            <div class="menu-icon">
+    
+                <i class="fa-solid fa-bars"></i>
+    
+            </div>
 
-        <!------------------navigation-------------->
-        <nav>
-
-            <ul>
-                <li><a href="#logo">Domů</a></li>
-                <li><a href="#specialisation">O nás</a></li>
-                <li><a href="#our-work">Dokončené realizace</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contacts">Kontakt</a></li>
-            </ul>
-
-        </nav>
-
-        <!-----------------menu-icon---------->
-        <div class="menu-icon">
-
-            <i class="fa-solid fa-bars"></i>
-
-        </div>
+        </section>
 
     </header>
 
     <!------------------MAIN------------------------>
-    <main>
+    <main id="main">
 
         <!------------welcome------------>
-        <section class="welcome">
+        <section id="welcome">
             <h2>
                 Průmyslové fotovoltaické elektrárny
             </h2>
@@ -117,9 +125,9 @@
 
                     <thead>
                         <tr>
-                            <th>Rok</th>
-                            <th>Název firmy</th>
-                            <th>Výkon(kWp)</th>
+                            <th>&#160;ROK&#160;</th>
+                            <th>NÁZEV FIRMY</th>
+                            <th>VÝKON (kWp)</th>
                         </tr>
                     </thead>
 
@@ -168,7 +176,7 @@
                 </table>
 
                 <p>
-                    * spolupráce a dodávka na klíč pro generálního dodavatele
+                    POZN.: Spolupráce a dodávka na klíč pro generálního dodavatele
                 </p>
 
             </div>
@@ -180,51 +188,123 @@
 
             <h2>Ukázky realizací</h2>
 
+            <h3>Zámecké Vinařství Bzenec (369 kWp, 2023)</h3>
+
             <div class="project-vinarstvi">
 
-                <img src="/assets/vinarstvi1.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro Zámecké Vinařství v Bzenci (2023).">
+                <div class="img-container">
+                    <a href="/assets/vinarstvi1.jpg">
+                        <img src="/assets/vinarstvi1.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro Zámecké Vinařství v Bzenci (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/vinarstvi2.JPEG" alt="Ukázka realizace fotovoltaické elektrárny pro Zámecké Vinařství v Bzenci (2023).">
+                <div class="img-container">
+                    <a href="/assets/vinarstvi2.JPEG">
+                        <img src="/assets/vinarstvi2.JPEG" alt="Ukázka realizace fotovoltaické elektrárny pro Zámecké Vinařství v Bzenci (2023).">
+                    </a>
+                </div>
 
             </div>
+
+            <h3>SMR Plus Bzenec (740 kWp, 2023)</h3>
 
             <div class="project-smr">
 
-                <img src="/assets/smr1.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                <div class="img-container">
+                    <a href="/assets/smr1.JPG">
+                        <img src="/assets/smr1.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                    </a>
+                </div>                    
+                
+                <div class="img-container">
+                    <a href="/assets/smr2.jpg">
+                        <img src="/assets/smr2.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/smr2.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                <div class="img-container">  
+                    <a href="/assets/smr3.JPG">
+                        <img src="/assets/smr3.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/smr3.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                <div class="img-container">
+                    <a href="/assets/smr4.JPG">
+                        <img src="/assets/smr4.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/smr4.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
-
-                <img src="/assets/smr5.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                <div class="img-container smr-last-img">
+                    <a href="/assets/smr5.JPG">
+                        <img src="/assets/smr5.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu SMR PLUS v Bzenci (2023).">
+                    </a>
+                </div>
 
             </div>
+
+            <h3>Kasko Slavkov (351 kWp, 2022)</h3>
 
             <div class="project-kasko">
 
-                <img src="/assets/kasko1.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                <div class="img-container">
+                    <a href="/assets/kasko1.JPG">
+                        <img src="/assets/kasko1.JPG" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                    </a>
+                </div>
 
-                <img src="/assets/kasko2.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                <div class="img-container">
+                    <a href="/assets/kasko2.jpg">
+                        <img src="/assets/kasko2.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                    </a>
+                </div>
 
-                <img src="/assets/kasko3.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                <div class="img-container">  
+                    <a href="/assets/kasko3.jpg">
+                        <img src="/assets/kasko3.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu KASKO ve Slavkově (2022).">
+                    </a>
+                </div>
 
             </div>
+
+            <h3>Peveko Jarošov (54 kWp, 2023)</h3>
 
             <div class="project-peveko">
 
-                <img src="/assets/peveko1.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu PEVEKO v Jarošově (2023).">
+                <div class="img-container">
+                    <a href="/assets/peveko1.jpg">
+                        <img src="/assets/peveko1.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu PEVEKO v Jarošově (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/peveko2.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu PEVEKO v Jarošově (2023).">
+                <div class="img-container">
+                    <a href="/assets/peveko2.jpg">
+                        <img src="/assets/peveko2.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu PEVEKO v Jarošově (2023).">
+                    </a>
+                </div>
 
             </div>
 
+            <h3>ZOT Olomouc (299 kWp, 2023)</h3>
+
             <div class="project-zot">
 
-                <img src="/assets/zot1.heic" alt="Ukázka realizace fotovoltaické elektrárny pro firmu ZOT v Olomouci (2023).">
+                <div class="img-container">
+                    <a href="/assets/zot1.jpg">
+                        <img src="/assets/zot1.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu ZOT v Olomouci (2023).">
+                    </a>
+                </div>
 
-                <img src="/assets/zot2.HEIC" alt="Ukázka realizace fotovoltaické elektrárny pro firmu ZOT v Olomouci (2023).">
+                <div class="img-container">
+                    <a href="/assets/zot2.jpg">                        
+                        <img src="/assets/zot2.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu ZOT v Olomouci (2023).">
+                    </a>
+                </div>
+
+                <div class="img-container">
+                    <a href="/assets/zot3.jpg">
+                        <img src="/assets/zot3.jpg" alt="Ukázka realizace fotovoltaické elektrárny pro firmu ZOT v Olomouci (2023).">
+                    </a>
+                </div>
 
             </div>
       
@@ -235,17 +315,25 @@
 
             <h2>Kontakty</h2>
 
-            <h3>Firemní údaje</h3>
-            <p>Alondo s.r.o.<br>
-            IČ: 201 79 552</p>
+            <div class="contacts-container">
 
-            <p>V Zahradách 153<br>
-            686 01 Uherské Hradiště</p>
+                <div class="company-info">
+    
+                    <p><span>Alondo s.r.o.</span><br>
+                    IČ: 201 79 552</p>
+        
+                    <p>V Zahradách 153<br>
+                    686 01 Uherské Hradiště<br>
+                    Česká republika</p>
+                </div>
+    
+                <div class="contact-info">
+                    <p><span>Datová schránka:</span> umazpmg</p>
+                    <p><span>Telefon:</span> <a href="tel:+420777153963"> 777153963</a></p>
+                    <p><span>E-mail:</span> <a href="mailto:jirilondyn@gmail.com"> jirilondyn@gmail.com</a></p>
+                </div>
 
-            <h3>Kontaktujte nás:</h3>
-            <p><strong>Datová schránka:</strong> umazpmg</p>
-            <p><strong>Telefon:</strong> 777153963</p>
-            <p><strong>E-mail:</strong> info@alondo.cz</p>
+            </div>
             
         </section>
 
@@ -256,8 +344,7 @@
         
         <div>
 
-            <p>Made by PATRIK KOPÁČ</p>
-            <p>&#169;2023</p>
+            <p>Created with love by PATRIK KOPÁČ | &copy;2024</p>
 
         </div>
 
@@ -266,3 +353,4 @@
     <script src="/js/script.js"></script>
 </body>
 </html>
+

@@ -17,16 +17,25 @@
 
 
 /* ---------------HEADER---------------- */
-header {
-    display: flex;
-    align-items: center;
-
+.header {
     background-color: #15304c;
-    height: 70px;
+    height: 90px;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
 
     position: sticky;
     left: 0;
     top: 0;
+
+    z-index: 999;
+}
+
+.header-container {
+    width: 90vw;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
 }
 
 
@@ -34,40 +43,39 @@ header {
 /* --------logo--------- */
 #logo {
     flex-grow: 1;
-    margin-left: 30px;
 
-    font-size: 1.4em;
+    font-size: 2rem;
     font-weight: 700;
+}
+
+#logo a {
     color: #e0ebf7;
+    text-decoration: none;
 }
 
 
 
 /* --------navigation--------- */
-header nav {
-    margin-right: 30px;
-}
-
-header nav li {
+.header nav li {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
     display: inline-block;
 
     margin-right: 20px;
 }
 
-header nav li a {
+.header nav li a {
     color: white;
     text-decoration: none;
 }
 
-header nav li:hover {
+.header nav li:hover {
     transform: scale(1.1);
     transition: 0.7s;
 }
 
-header nav li a:hover {
+.header nav li a:hover {
     color: #aac7e3;
 }
 
@@ -85,48 +93,55 @@ header nav li a:hover {
 
 
 /* ---------------MAIN---------------- */
-main h2 {
+#main h2 {
     text-align: center;
     margin-bottom: 3%;
+    font-size: 3rem;
+}
+
+#main h3,
+#main th {
     font-size: 2rem;
 }
 
-main p {
-    font-size: 1.2rem;
+#main p,
+#main ul,
+#main td {
+    font-size: 1.5rem;
 }
 
 
 
 /* --------welcome--------- */
-.welcome {
+#welcome {
     height: calc(100vh - 70px);
 
-    background-image: url(/assets/smr3.JPG);
+    background-image: url(/assets/vinarstvi3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
     margin-bottom: 3%;
 }
 
-.welcome h2,
-.welcome h3 {
+#welcome h2,
+#welcome h3 {
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-.welcome h2 {
+#welcome h2 {
     font-weight: 700;
-    padding-top: 50px;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+    padding-top: 75px;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
 }
 
-.welcome h3 {
+#welcome h3 {
     font-weight: 300;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 
@@ -136,7 +151,7 @@ main p {
     color: #15304c;
     background-color: #e0ebf7;
 
-    width: 80vw;
+    width: 90vw;
     margin: 7% auto;
     border-radius: 20px;
     padding: 2%;
@@ -147,8 +162,9 @@ main p {
     padding: 2% 10%;
 }
 
-#about-us h3 {
-    padding-bottom: 2%;
+.specialisation h3,
+.how-it-works h3 {
+    margin-bottom: 2%;
 }
 
 #about-us ul {
@@ -194,10 +210,10 @@ main p {
 .our-work-container table {
     width: 100%;
     margin: 7% 0 1% 0;
+    background-color: #204974;
 }
 
 .our-work-container thead {
-    text-transform: uppercase;
     font-size: 1.2rem;
 }
 
@@ -211,14 +227,19 @@ main p {
 }
 
 #our-work p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
 
 /* --------gallery--------- */
 #gallery {
-    width: 70vw;
+    width: 90vw;
     margin: 7% auto 0 auto;
+
+    color: #15304c;
+
+    position: relative;
 }
 
 #gallery img {
@@ -231,32 +252,73 @@ main p {
     object-position: center;
 }
 
+#gallery h3 {
+    margin: 3% 0 0.5% 3%;
+}
 
+.project-vinarstvi,
+.project-peveko {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.project-smr,
+.project-kasko,
+.project-zot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    align-content: space-between;
+}
+
+.img-container {
+    width: 44vw;
+    height: 60vh;
+    padding-bottom: 1%;
+}
+
+.smr-last-img {
+    justify-content: center;
+}
 
 /* --------contacts--------- */
 #contacts {
     width: 70vw;
-    margin: 7% auto;
+    margin: 3% auto;
+    border-radius: 20px;
+    padding: 2%;
 
     text-align: center;
-}
-
-#contacts li {
     color: #15304c;
-    list-style: none;
     background-color: #e0ebf7;
 
-    border-radius: 20px;
-
-    padding: 2%;
-    margin: 3% 0;
 }
 
-#contacts li:hover {
-    transform: scale(1.05);
-    transition: 0.8s;
+.contacts-container {
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    width: 90%;
+    margin: 5% auto 0 auto;
 }
 
+.contacts-container p {
+   margin-bottom: 10%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info span,
+.company-info span {
+    font-weight: 700;
+}
 
 
 
@@ -270,34 +332,10 @@ main p {
 #footer div {
     width: 70vw;
     margin: 0 auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#footer h3 {
-    color: white;
-}
-
-#footer a {
-    color: white;
-    text-decoration: none;
-
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px 10px;
     text-align: center;
 }
 
-#footer a:hover {
-    background-color: #245281;
-
-    transform: scale(1.1);
-    transition: 0.8s;
-}
-
-#footer .contacts {
-    text-transform: uppercase;
-    font-weight: 700;
+#footer p {
+    color: #aac7e3;
+    font-size: 1.2rem;
 }
