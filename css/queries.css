@@ -50,8 +50,4 @@
     header nav {
         display: block !important;
     }
-
-    header nav li a:hover {
-       color: #699ed5;
-    }
 }
