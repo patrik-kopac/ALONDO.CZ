@@ -1,7 +1,7 @@
 /* ---------------0-1700px------------ */
 @media (max-width: 1700px) {
-    #about-us .buttons h3 {
-        font-size: 1.5rem;
+    #main .buttons h3 {
+        font-size: 1.4rem;
     }
 }
 
@@ -10,6 +10,10 @@
 @media (max-width: 1400px) {
     .img-container {
         height: 44vh;
+    }
+
+    #main .buttons h3 {
+        font-size: 1.2rem;
     }
 }
 
@@ -21,16 +25,16 @@
         align-items: center;
     }
 
-    .buttons a:first-of-type {
-        width: 570px;
-    }
-
-    .buttons a:last-of-type {
+    .buttons a {
         width: 425px;
     }
 
     .buttons a:first-of-type {
         margin-bottom: 4%;
+    }
+
+    #main .buttons h3 {
+        font-size: 1.4rem;
     }
 }
 
@@ -95,7 +99,7 @@
         top: 70px;
         right: 0px;
 
-        background-color: #15304c;
+        background-color: #000000;
 
         width: 30%;
 
@@ -195,10 +199,6 @@
     #our-work td {
         font-size: 1rem;
         padding: 3% 0;
-    }
-
-    .our-work-container {
-        width: 90vw;
     }
 
     #about-us ul {
