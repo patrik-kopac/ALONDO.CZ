@@ -4,6 +4,11 @@
     .img-container {
         height: 44vh;
     }
+
+    #welcome h2 {
+        font-size: 3.5rem;
+    }
+
 }
 
 
@@ -53,6 +58,13 @@
     
     #main .buttons h3 {
         font-size: 1.4rem;
+    }
+}
+
+/* -------------0-1000px------------- */
+@media (max-width: 1000px) {
+    #welcome h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -168,6 +180,15 @@
     .buttons a:last-child {
         margin-top: 5%;
     }
+
+    #welcome h2 {
+        font-size: 3rem;
+        padding: 28vh 17vw 0 17vw;
+    }
+
+    #welcome h3 {
+        font-size: 2rem;
+    }
 }
 
 
@@ -188,8 +209,8 @@
     }
 }
 
-/* ------------0-500px------------- */
-@media (max-width: 500px) {
+/* ------------0-510px------------- */
+@media (max-width: 510px) {
     .img-container {
         width: 90vw;
         height: 40vh;
@@ -201,11 +222,16 @@
     }
 
     #welcome h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     #welcome h3 {
-        font-size: 1rem;
+        font-size: 2rem;
+        padding: 0 30vw 0 30vw;
+    }
+
+    #welcome span {
+        display: none;
     }
 
     .header nav li a {
@@ -227,5 +253,18 @@
 
     #contacts h2 {
         margin-bottom: 15%;
+    }
+}
+
+/* -----------0-430px------------- */
+@media (max-width: 430px) {
+    #welcome h2 {
+        font-size: 2.2rem;
+        padding-top: 25vh;
+    }
+
+    #welcome h3 {
+        font-size: 1.7rem;
+        padding: 0 32vw 0 32vw;
     }
 }
