@@ -1,40 +1,8 @@
-/* ---------------0-1700px------------ */
-@media (max-width: 1700px) {
-    #main .buttons h3 {
-        font-size: 1.4rem;
-    }
-}
-
 
 /* ---------------0-1400px------------ */
 @media (max-width: 1400px) {
     .img-container {
         height: 44vh;
-    }
-
-    #main .buttons h3 {
-        font-size: 1.2rem;
-    }
-}
-
-
-/* ------------0-1300px-------------*/
-@media (max-width: 1300px) {
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .buttons a {
-        width: 425px;
-    }
-
-    .buttons a:first-of-type {
-        margin-bottom: 4%;
-    }
-
-    #main .buttons h3 {
-        font-size: 1.4rem;
     }
 }
 
@@ -76,6 +44,15 @@
 
     #welcome h3 {
         font-size: 2rem;
+    }
+
+    .buttons a {
+        width: 310px;
+        padding: 2% 0;
+    }
+    
+    #main .buttons h3 {
+        font-size: 1.4rem;
     }
 }
 
@@ -178,23 +155,24 @@
     #gallery h3 {
         margin-top: 10%;
     }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons a {
+        width: 380px;
+    }
+
+    .buttons a:last-child {
+        margin-top: 5%;
+    }
 }
 
 
 /* ------------0-700px------------- */
 @media (max-width: 700px) {
-    .buttons a:first-of-type {
-        width: 317px;
-    }
-
-    .buttons a:last-of-type {
-        width: 265px;
-    }
-
-    .buttons a:first-of-type {
-        margin-bottom: 4%;
-    }
-
     #our-work th,
     #our-work td {
         font-size: 1rem;
@@ -203,6 +181,10 @@
 
     #about-us ul {
         font-size: 1rem;
+    }
+
+    .buttons {
+        padding-top: 10%;
     }
 }
 
@@ -235,8 +217,12 @@
         margin-bottom: 7%;
     }
 
-    #about-us .buttons h3 {
-        padding: 3%;
+    .buttons a {
+        width: 310px;
+    }
+
+    #main .buttons h3 {
+        font-size: 1.3rem;
     }
 
     #contacts h2 {
