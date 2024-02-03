@@ -36,7 +36,7 @@
 /* ---------------HEADER---------------- */
 .header {
     background-color: #000000;
-    height: 90px;
+    /* height: 90px; */
     padding: 15px 0;
     border-bottom: 1px solid rgb(0, 0, 0);
 
@@ -49,7 +49,7 @@
 
             @media (max-width: 1200px) {
                 .header {
-                    height: 70px;
+                    /* height: 70px; */
                 }
             }
 
@@ -60,7 +60,7 @@
             }
 
 .header-container {
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
 
     display: flex;
@@ -329,16 +329,28 @@
 #about-us {
     color: #000000;
 
-    width: 80vw;
-    margin: 7% auto;
-    padding: 0 2% 2% 2%;
+    margin: 10% auto;
 }
 
+            @media (min-width: 500px) {
+                #about-us {
+                    width: 90vw;
+                    margin: 7% auto;
+                    padding: 0 2% 2% 2%;
+                }
+            }
+
 #about-us h2 {
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #000;
-    padding-left: 5%;
 }
+
+            @media (min-width: 500px) {
+                #about-us h2 {
+                    text-align: left;
+                    padding-left: 5%;
+                }
+            }
 
 .how-it-works,
 .specialisation {
@@ -458,26 +470,44 @@
 #our-work {
     color: rgb(0, 0, 0);
   
-    padding: 0 2% 2% 2%;
     text-align: center;
-    width: 80vw;
-    margin: 0 auto;
+    margin: 10% auto;
 }
+
+            @media (min-width: 500px) {
+                #our-work {
+                    width: 90vw;
+                    padding: 0 2% 2% 2%;
+                }
+            }
 
 #our-work h2 {
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #000;
-    padding-left: 5%;
 }
 
+            @media (min-width: 500px) {
+                #our-work h2 {
+                    text-align: left;
+                    padding-left: 5%;
+                }
+            }
+
 .our-work-container table {
-    width: 100%;
-    margin: 5% 0 1% 0;
+    width: 97%;
+    margin: 5% auto 1% auto;
     border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
-    border-radius: 20px;
     background-color: #f2f2f2;
 }
+
+            @media (min-width: 500px) {
+                .our-work-container table {
+                    width: 100%;
+                    border-radius: 20px;
+                    margin: 5% 0 1% 0;
+                }
+            }
 
 .our-work-container thead {
     font-size: 1.2rem;
@@ -510,6 +540,9 @@
 #our-work p {
     font-size: 1.2rem;
     text-align: left;
+
+    margin: 0 auto;
+    width: 90%;
 }
 
             @media (max-width: 900px) {
@@ -518,24 +551,44 @@
                 }
             }
 
+            @media (min-width: 500px) {
+                #our-work p {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+
+
 
 
 
 /* --------gallery--------- */
 #gallery {
-    width: 90vw;
-    margin: 7% auto 0 auto;
+    margin: 10% auto 0 auto;
 
     color: #000000;
 
     position: relative;
 }
 
+            @media (min-width: 500px) {
+                #gallery {
+                    width: 90vw;
+                }
+            }
+
 #gallery h2 {
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #000;
-    padding-left: 5%;
 }
+
+            @media (min-width: 500px) {
+                #gallery h2 {
+                    text-align: left;
+                    padding-left: 5%;
+                }
+            }
 
 #gallery h3 {
     margin: 3% 0 0.5% 3%;
@@ -557,6 +610,7 @@
 .project-vinarstvi,
 .project-peveko {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1%;
 }
@@ -568,7 +622,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1%;
-    align-content: space-between;
 }
 
             @media (max-width: 900px) {
@@ -583,47 +636,57 @@
             }
 
 #gallery a {
-    width: 44vw;
-    height: 60vh;
-    padding-bottom: 1%;
+    width: 100%;
+    height: 50vh;
+
+    margin-bottom: 2%;
 
     display: inline-block;
 }
 
-            @media (max-width: 1400px) {
+            @media (min-width: 500px) {
+                #gallery a {
+                    width: 90vw;
+                    height: 60vh;
+                    padding-bottom: 1%;
+                }
+            }
+/* 
+            @media (min-width: 900px) {
                 #gallery a {
                     height: 44vh;
                 }
-            }
+            } */
 
-            @media (max-width: 900px) {
+            @media (min-width: 1400px) {
                 #gallery a {
-                    width: 90vw;
+                    width: 44vw;
                     height: 60vh;
                 }
             }
 
-            @media (max-width: 510px) {
-                #gallery a {
-                    width: 90vw;
-                    height: 40vh;
+            @media (min-width: 500px) {
+                #gallery a:hover {
+                    transform: scale(1.02);
+                    transition: 0.7s;
                 }
             }
-
-#gallery a:hover {
-    transform: scale(1.02);
-    transition: 0.7s;
-}
 
 #gallery a img {
     width: 100%;
     height: 100%;
 
-    border-radius: 20px;
+    margin-bottom: 2%;
 
     object-fit: cover;
     object-position: center;
 }
+
+            @media (min-width: 500px) {
+                #gallery a img {
+                    border-radius: 20px;
+                }
+            }
 
 .smr-last-img {
     justify-content: center;
@@ -633,7 +696,7 @@
     display: none;
 }
 
-            @media (min-width: 750px) {
+            @media (min-width: 500px) {
                 #gallery .img-small {
                     display: none;
                 }
@@ -651,15 +714,20 @@
 
 /* --------contacts--------- */
 #contacts {
-    width: 70vw;
+    width: 80vw;
     margin: 10% auto;
     border-radius: 20px;
     border: 1px solid black;
-    padding: 2%;
 
     text-align: center;
-
 }
+
+            @media (min-width: 500px) {
+                #contacts {
+                    width: 70vw;
+                    padding: 2%;
+                }
+            }
 
 .contacts-container {
     display: flex;
