@@ -241,7 +241,7 @@
 #welcome {
     height: calc(90vh - 70px);
 
-    background-image: url(/assets/images/welcome/vinarstv4.jpg);
+    background-image: url(/assets/images/vinarstv4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
