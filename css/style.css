@@ -713,6 +713,9 @@
             } */
 
 
+
+            
+
 /*--------- Swiper styles --------*/
 :root {
     --swiper-theme-color: #000000;
@@ -774,13 +777,6 @@ body {
     width: 100%;
     height: 90vh;
 }
-
-            @media (max-width: 800px) {
-                .swiper-wrapper {
-                    /* background-color: #f2f2f2; */
-                    /* border-radius: 20px; */
-                }
-            }
 
 .swiper-slide {
     display: flex;
