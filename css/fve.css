@@ -242,10 +242,10 @@
 #welcome {
     height: calc(90vh - 70px);
 
-    background-image: url(/assets/images/univerzal4.jpg);
+    background-image: url(/assets/images/vinarstv4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-color: rgba(0, 0, 0, 0.499);
     background-blend-mode: multiply;
 
@@ -479,7 +479,7 @@
 
 
 /* --------our-work--------- */
-/* #our-work {
+#our-work {
     color: rgb(0, 0, 0);
   
     text-align: center;
@@ -568,13 +568,13 @@
                     width: 100%;
                     margin: 0;
                 }
-            } */
+            }
 
 
 
 
 /* --------gallery--------- */
-/* #gallery {
+#gallery {
     width: 90vw;
     margin: 7% auto 0 auto;
 
@@ -639,34 +639,34 @@
             }
 
 #gallery a {
-    width: 44vw; */
-    /* height: 60vh; KOMENT UZ PREDTYYYYYYYYYYYYM*/
-    /* padding-bottom: 3%;
+    width: 44vw;
+    /* height: 60vh; */
+    padding-bottom: 3%;
 
     display: inline-block;
-} */
+}
 
             /* @media (max-width: 1400px) {
                 #gallery a {
                     height: 44vh;
                 }
-            } KOMENT UZ PREDTYYYYYYYYYYYYM */
-
-            /* @media (max-width: 1000px) {
-                #gallery a {
-                    width: 90vw; */
-                    /* height: 60vh; */
-                /* }
             } */
+
+            @media (max-width: 1000px) {
+                #gallery a {
+                    width: 90vw;
+                    /* height: 60vh; */
+                }
+            }
 
             /* @media (max-width: 510px) {
                 #gallery a {
                     width: 90vw;
                     height: 40vh;
                 }
-            }  KOMENT UZ PREDTYYYYYYYYYYYYM*/
+            } */
 
-/* #gallery a:hover {
+#gallery a:hover {
     transform: scale(1.02);
     transition: 0.7s;
 }
@@ -683,7 +683,7 @@
 
 .smr-last-img {
     justify-content: center;
-} */
+}
 
 
 
@@ -790,8 +790,4 @@
 #footer p {
     color: #ffffff;
     font-size: 1.2rem;
-}
-
-#footer a {
-    color: #000;
 }
